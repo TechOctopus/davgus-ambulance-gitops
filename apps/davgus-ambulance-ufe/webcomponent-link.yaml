@@ -16,7 +16,7 @@ spec:
         Umožňuje vytvárať karty pacientov, spravovať oddelenia a priraďovať pacientov do izieb.
     - name: material-icon
       value: local_hospital
-    - name: image
+    - name: tile-img-src
       value: /davgus-ambulance-ufe/assets/card-image.png
     - name: href
       value: ./davgus-ambulance-wl
