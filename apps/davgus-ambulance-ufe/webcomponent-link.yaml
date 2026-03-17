@@ -7,14 +7,17 @@ spec:
   element: polyfea-md-app
   attributes:
     - name: headline
-      value: Zoznam čakajúcich davgus
+      value: Správa a umiestnenie pacientov
     - name: short-headline
-      value: Zoznam čakajúcich davgus
+      value: Správa pacientov
     - name: supporting-text
       value: |
-        Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
+        Systém pre správu a umiestnenie pacientov v oddeleniach nemocnice.
+        Umožňuje vytvárať karty pacientov, spravovať oddelenia a priraďovať pacientov do izieb.
     - name: material-icon
-      value: home_health
+      value: local_hospital
+    - name: image
+      value: /davgus-ambulance-ufe/assets/card-image.png
     - name: href
       value: ./davgus-ambulance-wl
   priority: 10
