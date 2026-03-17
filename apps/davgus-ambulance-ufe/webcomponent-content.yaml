@@ -1,0 +1,18 @@
+apiVersion: polyfea.github.io/v1alpha1
+kind: WebComponent
+metadata:
+  name: davgus-ambulance-ufe-content
+spec:
+  microFrontend: davgus-ambulance-ufe
+  element: davgus-ambulance-wl-app
+  attributes:
+    - name: base-path
+      value: /davgus-ambulance-wl/
+    - name: api-base
+      value: http://localhost:5500/api
+    - name: ambulance-id
+      value: bobulova
+  displayRules:
+    - allOf:
+        - context-name: main-content
+        - path: "^(\\.?/)?davgus-ambulance-wl(/.*)?$"

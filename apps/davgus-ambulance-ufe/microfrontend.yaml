@@ -1,0 +1,9 @@
+apiVersion: polyfea.github.io/v1alpha1
+kind: MicroFrontend
+metadata:
+  name: davgus-ambulance-ufe
+spec:
+  frontendClass: md-shell
+  service:
+    name: davgus-ambulance-ufe
+  modulePath: build/davgus-ambulance-ufe.esm.js

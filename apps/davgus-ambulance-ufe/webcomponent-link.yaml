@@ -1,0 +1,25 @@
+apiVersion: polyfea.github.io/v1alpha1
+kind: WebComponent
+metadata:
+  name: davgus-ambulance-ufe-link
+spec:
+  microFrontend: polyfea-md-shell
+  element: polyfea-md-app
+  attributes:
+    - name: headline
+      value: Zoznam čakajúcich davgus
+    - name: short-headline
+      value: Zoznam čakajúcich davgus
+    - name: supporting-text
+      value: |
+        Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
+    - name: material-icon
+      value: home_health
+    - name: href
+      value: ./davgus-ambulance-wl
+  priority: 10
+  displayRules:
+    - anyOf:
+        - context-name: applications
+        - context-name: rail-content
+        - context-name: drawer-content

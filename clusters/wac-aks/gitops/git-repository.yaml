@@ -1,0 +1,15 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: davgus-gitops-repo
+  namespace: wac-hospital
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  timeout: 1m0s
+  url: https://github.com/TechOctopus/davgus-ambulance-gitops
+
+# ak používate privátny repozitár nezabudnite doplniť autentifikačné údaje
+# secretRef:
+#    name: davgus-repository-pat

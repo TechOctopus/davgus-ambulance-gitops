@@ -1,0 +1,16 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: davgus-install
+  namespace: wac-hospital
+spec:
+  wait: true
+  force: true
+  dependsOn:
+    - name: davgus-prepare
+  interval: 120s
+  path: clusters/localhost/install
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: davgus-gitops-repo

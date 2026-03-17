@@ -1,0 +1,13 @@
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImagePolicy
+metadata:
+  name: davgus-ambulance-ufe
+  namespace: wac-hospital
+spec:
+  imageRepositoryRef:
+    name: davgus-ambulance-ufe
+  filterTags:
+    pattern: "main.*"
+  policy:
+    alphabetical:
+      order: asc
