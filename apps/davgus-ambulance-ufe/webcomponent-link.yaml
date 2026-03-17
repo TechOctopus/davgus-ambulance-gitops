@@ -17,7 +17,7 @@ spec:
     - name: material-icon
       value: local_hospital
     - name: tile-img-src
-      value: /davgus-ambulance-ufe/assets/card-image.png
+      value: https://raw.githubusercontent.com/TechOctopus/davgus-ambulance-ufe/refs/heads/main/src/assets/card-image.png
     - name: href
       value: ./davgus-ambulance-wl
   priority: 10
