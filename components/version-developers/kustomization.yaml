@@ -3,4 +3,4 @@ kind: Component
 images:
   - name: fiitkar/davgus-ambulance-ufe
     newName: fiitkar/davgus-ambulance-ufe # {"$imagepolicy":  "wac-hospital:davgus-ambulance-ufe:name"}
-    newTag: main.20260330.1259 # {"$imagepolicy": "wac-hospital:davgus-ambulance-ufe:tag"}
+    newTag: main.20260330.1310 # {"$imagepolicy": "wac-hospital:davgus-ambulance-ufe:tag"}
