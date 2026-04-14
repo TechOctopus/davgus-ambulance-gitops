@@ -5,9 +5,10 @@ labels:
   - pairs:
       app.kubernetes.io/part-of: wac-hospital
 
-namespace: wac-hospital
+namespace: wac-hospital-davgus
 
 resources:
+  - namespace.yaml
   - prepare.kustomization.yaml
   - cd.kustomization.yaml
   - install.kustomization.yaml
@@ -15,3 +16,5 @@ resources:
   - davgus-ambulance-ufe.image-repository.yaml
   - davgus-ambulance-ufe.image-policy.yaml
   - image-update-automation.yaml
+  - ambulance-webapi.image-repository.yaml
+  - ambulance-webapi.image-policy.yaml
