@@ -1,10 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: davgus-ambulance-webapi
+  name: davgus-openapi-ui
 spec:
-  type: ClusterIP
+  selector:
+    pod: davgus-ambulance-webapi-label
   ports:
     - name: http
       protocol: TCP
       port: 80
+      targetPort: 8081
