@@ -7,9 +7,49 @@ spec:
     spec:
       containers:
         - name: openapi-ui
-          image: swaggerapi/swagger-ui
           env:
             - name: URL
               value: /davgus-openapi
             - name: BASE_URL
               value: /davgus-openapi-ui
+        - name: davgus-ambulance-webapi-container
+          $patch: delete
+        - name: davgus-ambulance-wl-webapi-container
+          env:
+            - $patch: replace
+            - name: AMBULANCE_API_MONGODB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  key: host
+                  name: mongodb-connection
+            - name: AMBULANCE_API_MONGODB_PORT
+              valueFrom:
+                configMapKeyRef:
+                  key: port
+                  name: mongodb-connection
+            - name: AMBULANCE_API_MONGODB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  key: username
+                  name: mongodb-auth
+            - name: AMBULANCE_API_MONGODB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: password
+                  name: mongodb-auth
+            - name: AMBULANCE_API_ENVIRONMENT
+              value: production
+            - name: AMBULANCE_API_PORT
+              value: "8080"
+            - name: AMBULANCE_API_MONGODB_DATABASE
+              valueFrom:
+                configMapKeyRef:
+                  key: database
+                  name: davgus-ambulance-webapi-config-68bdc922c4
+            - name: AMBULANCE_API_MONGODB_COLLECTION
+              valueFrom:
+                configMapKeyRef:
+                  key: collection
+                  name: davgus-ambulance-webapi-config-68bdc922c4
+            - name: AMBULANCE_API_MONGODB_TIMEOUT_SECONDS
+              value: "5"
