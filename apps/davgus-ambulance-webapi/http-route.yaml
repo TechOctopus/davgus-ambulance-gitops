@@ -6,6 +6,10 @@ spec:
   parentRefs:
     - name: davgus-wac-hospital-gateway
       namespace: wac-hospital-davgus
+    - name: wac-hospital-gateway
+      namespace: wac-hospital
+    - name: wac-hospital-gateway
+      namespace: wac-hospital-system
   rules:
     - matches:
         - path:
