@@ -3,7 +3,7 @@ kind: Component
 images:
   - name: fiitkar/davgus-ambulance-ufe
     newName: fiitkar/davgus-ambulance-ufe
-    newTag: 1.2.0
+    newTag: 1.2.1
   - name: fiitkar/davgus-ambulance-wl-webapi
     newName: fiitkar/davgus-ambulance-wl-webapi
-    newTag: 1.0.1
+    newTag: 1.0.2
