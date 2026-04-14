@@ -7,6 +7,7 @@ spec:
     spec:
       containers:
         - name: openapi-ui
+          image: swaggerapi/swagger-ui
           env:
             - name: URL
               value: /davgus-openapi
