@@ -45,11 +45,11 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   key: database
-                  name: davgus-ambulance-webapi-config-68bdc922c4
+                  name: davgus-ambulance-webapi-config
             - name: AMBULANCE_API_MONGODB_COLLECTION
               valueFrom:
                 configMapKeyRef:
                   key: collection
-                  name: davgus-ambulance-webapi-config-68bdc922c4
+                  name: davgus-ambulance-webapi-config
             - name: AMBULANCE_API_MONGODB_TIMEOUT_SECONDS
               value: "5"

@@ -6,5 +6,16 @@ resources:
   - openapi-ui.service.yaml
   - http-route.yaml
 
+configMapGenerator:
+  - name: davgus-ambulance-webapi-mongodb-init
+    behavior: replace
+    files:
+      - params/init-db.js
+  - name: davgus-ambulance-webapi-config
+    behavior: replace
+    literals:
+      - database=davgus-ambulance-wl
+      - collection=departments
+
 patches:
   - path: patches/ambulance-webapi.deployment.yaml
