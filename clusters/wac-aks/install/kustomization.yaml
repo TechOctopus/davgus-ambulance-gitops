@@ -12,6 +12,7 @@ labels:
 
 resources:
   - ../../../apps/davgus-ambulance-ufe
+  - ../../../apps/davgus-ambulance-webapi
 
 components:
   - ../../../components/version-release
