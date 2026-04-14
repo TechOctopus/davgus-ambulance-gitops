@@ -6,4 +6,4 @@ images:
     newTag: main.20260401.1101 # {"$imagepolicy": "wac-hospital-davgus:davgus-ambulance-ufe:tag"}
   - name: fiitkar/davgus-ambulance-wl-webapi
     newName: fiitkar/davgus-ambulance-wl-webapi # {"$imagepolicy":  "wac-hospital-davgus:davgus-ambulance-webapi:name"}
-    newTag: main # {"$imagepolicy": "wac-hospital-davgus:davgus-ambulance-webapi:tag"}
+    newTag: main.20260413.1753 # {"$imagepolicy": "wac-hospital-davgus:davgus-ambulance-webapi:tag"}
