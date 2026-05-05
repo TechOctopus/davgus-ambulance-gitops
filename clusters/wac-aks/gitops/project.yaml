@@ -1,0 +1,12 @@
+apiVersion: wac-fiit.github.io/v1alpha1
+kind: Project
+metadata:
+  name: davgus-ambulance-wl
+spec:
+  title: "Správa a umiestnenie pacientov"
+  description: "Systém pre správu a umiestnenie pacientov v oddeleniach nemocnice. Umožňuje vytvárať karty pacientov, spravovať oddelenia a priraďovať pacientov do izieb."
+  authors: "Heorhi Davydau, Vladyslav Gusiev"
+  azureLink: "https://<sub-domain>.azurewebsites.net"
+  frontendRepoUrl: "https://github.com/TechOctopus/davgus-ambulance-ufe"
+  backendRepoUrl: "https://github.com/TechOctopus/davgus-ambulance-webapi"
+  gitopsRepoUrl: "https://github.com/TechOctopus/davgus-ambulance-gitops"

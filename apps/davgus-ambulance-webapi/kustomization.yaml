@@ -19,3 +19,7 @@ configMapGenerator:
 
 patches:
   - path: patches/ambulance-webapi.deployment.yaml
+
+labels:
+  - pairs:
+      wac-fiit.github.io/component: backend
